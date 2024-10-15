@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bé tập tính</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-md">
+      <h1 class="text-2xl font-bold mb-6 text-center">Bé tập tính</h1>
+      <form class="bg-white p-6 rounded shadow-md">
+        <label for="firstNum" class="block mb-2">Số thứ nhất</label>
+        <input
+          type="text"
+          name="firstNum"
+          id="firstNum"
+          class="w-full p-2 border border-gray-300 rounded mb-4"
+        />
+
+        <label for="secondNum" class="block mb-2">Số thứ hai</label>
+        <input
+          type="text"
+          name="secondNum"
+          id="secondNum"
+          class="w-full p-2 border border-gray-300 rounded mb-4"
+        />
+
+        <div class="mb-4">
+          <input
+            type="radio"
+            id="add"
+            value="add"
+            name="operation"
+            class="mr-2"
+          />
+          <label for="add">Cộng</label>
+          <input
+            type="radio"
+            id="sub"
+            value="sub"
+            name="operation"
+            class="mr-2 ml-4"
+          />
+          <label for="sub">Trừ</label>
+        </div>
+        <div class="mb-4">
+          <input
+            type="radio"
+            id="mul"
+            value="mul"
+            name="operation"
+            class="mr-2"
+          />
+          <label for="mul">Nhân</label>
+          <input
+            type="radio"
+            id="div"
+            value="div"
+            name="operation"
+            class="mr-2 ml-4"
+          />
+          <label for="div">Chia</label>
+        </div>
+
+        <p class="text-red-600 mb-4">
+          Thông báo<strong id="notice" class="ml-2"></strong>
+        </p>
+        <input
+          type="button"
+          value="Tính"
+          id="btnCal"
+          class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 cursor-pointer"
+        />
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
